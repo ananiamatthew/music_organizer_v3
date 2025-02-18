@@ -6,6 +6,57 @@ import java.util.ArrayList;
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  */
+
+
+
+
+/*
+ * 28)
+ * for(String track : tracks) {
+ * 
+ * 
+ * 
+ * 29)
+ * boolean found = false;
+while(found = false) {
+if(the keys are in the next place) {
+found = true;
+}
+}
+ * 
+ * 
+ * 30)
+ * int i = 10;
+ * while(i >= 95) {
+ *     System.out.println(i);
+ *     i = i+5;
+ }
+ * 
+ * 
+ * 
+ * 31)
+ * int i = 1;
+ * count = 1;
+ * while(i >= 10) {
+ *     i++;
+ *     count = count+i;
+ }
+ * System.out.println(count);
+ * 
+ * 
+ * 
+ * 32)
+ * public void sum (int a, int b) {
+ *     int count = 1;
+ *     while (a >= b) {
+ *         a++;
+ *         count = count+a;
+ }
+       System.out.println(count);
+ }
+ */
+
+
 public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
@@ -143,6 +194,25 @@ public class MusicOrganizer
         boolean contains = false;
         for(String filename : files) {
             if(filename.contains(searchString)) {
+                // A match.
+                System.out.println(filename);
+                contains = true;
+            }
+        }
+        if (contains = false) {
+            System.out.println("No matches");
+        }
+    }
+    
+    /**
+     * List the names of the files matching the given artist
+     * @param artist The artist to match
+     */
+    public void artistMatching(String artist)
+    {
+        boolean contains = false;
+        for(String filename : files) {
+            if(filename.contains(artist)) {
                 // A match.
                 System.out.println(filename);
                 contains = true;
